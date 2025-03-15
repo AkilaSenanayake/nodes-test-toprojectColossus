@@ -169,17 +169,14 @@ export default function ForceDirectedTree() {
         minRadius: am5.percent(1),
         maxRadius: am5.percent(8),
         nodePadding: 15,
-        manyBodyStrength: -10,
-        linkLength: 100
+        manyBodyStrength: -10
       })
     );
 
     // Set colors for different categories
     series.nodes.template.setAll({
       draggable: true,
-      tooltipText: "{name}",
-      fillOpacity: 0.8,
-      strokeWidth: 2
+      tooltipText: "{name}"
     });
 
     series.data.setAll([data]);
