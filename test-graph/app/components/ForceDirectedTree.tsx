@@ -166,8 +166,8 @@ export default function ForceDirectedTree() {
         categoryField: "name",
         childDataField: "children",
         centerStrength: 0.5,
-        minRadius: am5.percent(1),
-        maxRadius: am5.percent(8),
+        minRadius: am5.percent(0.5),
+        maxRadius: am5.percent(4),
         nodePadding: 15,
         manyBodyStrength: -10
       })
